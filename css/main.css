@@ -75,20 +75,41 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .container {
-    width: 1200px;
+    width: 1440px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
+}
+
+.hero {
+  background-image: url(../images/hero/bg-desk.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
 .hero__title {
@@ -114,17 +135,23 @@ img {
   color: #b9b9b9;
 }
 
+.hero__text--direction {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero__text--black {
   color: #111518;
 }
 
-.hero__text--orange {
+.hero__text--accent {
   color: #ff6b09;
 }
 
 .hero__btn-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .hero__btn {
@@ -132,7 +159,6 @@ img {
   justify-content: center;
   padding: 14px 0;
   width: 260px;
-  margin-top: 50px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
@@ -153,7 +179,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero__container {
     display: flex;
-    align-items: center;
+    padding-top: 70px;
   }
   .hero__inner {
     margin-right: 18px;
@@ -166,8 +192,57 @@ img {
     margin-top: 15px;
   }
   .hero__btn-wrapper {
+    margin-top: 45px;
     display: flex;
     justify-content: start;
+  }
+  .hero__img {
+    justify-content: center;
+    margin-top: 0;
+    margin-right: -22px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__container {
+    display: flex;
+    padding-top: 30px;
+  }
+  .hero__inner {
+    margin-right: 50px;
+    padding-top: 95px;
+  }
+  .hero__title {
+    max-width: 530px;
+    font-size: 58px;
+    line-height: 1.30;
+  }
+  .hero__text {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .hero__text--direction {
+    flex-direction: row;
+  }
+  .hero__text--accent {
+    color: #111518;
+    margin-left: 7px;
+  }
+  .hero__btn-wrapper {
+    margin-top: 45px;
+    display: flex;
+    justify-content: start;
+  }
+  .hero__btn {
+    padding: 27px 0;
+    width: 354px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .hero__img {
+    justify-content: center;
+    margin-top: 0;
+    margin-right: -82px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,15 @@
+
 .hero {
-	// &__container {
-	// 	position: relative;
-	// }
+	background-image: url(../images/hero/bg-desk.png);
+	// background-image: url(../images/hero/bg-tab-mob.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+   &__container {
+		padding-top: 30px;
+		padding-bottom: 70px;
+   }
 
    &__title {
       font-weight: 800;
@@ -27,26 +35,31 @@
       color: #b9b9b9;
    }
 
+	&__text--direction {
+		display: flex;
+		flex-direction: column;
+	}
+
    &__text--black {
       color: #111518;
    }
 
-   &__text--orange {
+   &__text--accent {
       color: #ff6b09;
    }
 
-	&__btn-wrapper {
-		display: flex;
-		justify-content: center;
-	}
+   &__btn-wrapper {
+      display: flex;
+      justify-content: center;
+		margin-top: 50px;
+   }
 
    &__btn {
       display: inline-flex;
-		justify-content: center;
-		padding: 14px 0;
-		width: 260px;
-		margin-top: 50px;
-
+      justify-content: center;
+      padding: 14px 0;
+      width: 260px;
+      
       font-weight: 700;
       font-size: 12px;
       line-height: 1.25;
@@ -54,42 +67,99 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #ffffff;
-		background-color: #ff6b09;
-		border: none;	
+      background-color: #ff6b09;
+      border: none;
    }
 
-	&__img {
-		display: flex;
-		justify-content: center;
-		margin-top: 54px;
-	}
+   &__img {
+      display: flex;
+      justify-content: center;
+      margin-top: 54px;
+   }
 
-	@media screen and (min-width: 768px) and (max-width: 1439px) {
+   @media screen and (min-width: 768px) and (max-width: 1439px) {
+
+      &__container {
+         display: flex;
+         padding-top: 70px;
+      }
+
+      &__inner {
+         margin-right: 18px;
+      }
+
+      &__title {
+         max-width: 320px;
+         font-size: 26px;
+      }
+
+      &__text {
+         margin-top: 15px;
+      }
+
+      &__btn-wrapper {
+			margin-top: 45px;
+         display: flex;
+         justify-content: start;
+      }
+
+      &__img {
+			justify-content: center;
+			margin-top: 0;
+         margin-right: -22px;
+      }
+   }
+
+	@media screen and (min-width: 1440px) {
+		// background-image: url(../images/hero/bg-desk.png);
+
 		&__container {
-			display: flex;
-			align-items: center;
-		}
+         display: flex;
+         padding-top: 30px;
+      }
 
 		&__inner {
-			margin-right: 18px;
+         margin-right: 50px;
+			padding-top: 95px;
+      }
+
+      &__title {
+         max-width: 530px;
+         font-size: 58px;
+			line-height: 1.30;
+      }
+
+      &__text {
+			font-size: 20px;
+         margin-top: 15px;
+      }
+
+		&__text--direction {
+			flex-direction: row;
 		}
 
-		&__title {
-			max-width: 320px;
-			font-size: 26px;
+		&__text--accent {
+			color: #111518;
+			margin-left: 7px;
 		}
 
-		&__text {
-			margin-top: 15px;
+      &__btn-wrapper {
+			margin-top: 45px;
+         display: flex;
+         justify-content: start;
+      }
+
+		&__btn {
+			padding: 27px 0;
+			width: 354px;
+			font-size: 14px;
+			line-height: 1.21;
 		}
 
-		&__btn-wrapper {
-			display: flex;
-			justify-content: start;
-		}
-
-		&__img {
-			
-		}
+      &__img {
+			justify-content: center;
+			margin-top: 0;
+         margin-right: -82px;
+      }
 	}
 }
