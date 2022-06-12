@@ -48,13 +48,13 @@
       color: #ff6b09;
    }
 
-   &__btn-wrapper {
+   &__link-wrapper {
       display: flex;
       justify-content: center;
 		margin-top: 50px;
    }
 
-   &__btn {
+   &__link {
       display: inline-flex;
       justify-content: center;
       padding: 14px 0;
@@ -97,9 +97,8 @@
          margin-top: 15px;
       }
 
-      &__btn-wrapper {
+      &__link-wrapper {
 			margin-top: 45px;
-         display: flex;
          justify-content: start;
       }
 
@@ -143,13 +142,13 @@
 			margin-left: 7px;
 		}
 
-      &__btn-wrapper {
+      &__link-wrapper {
 			margin-top: 45px;
-         display: flex;
+			margin-right: auto;
          justify-content: start;
       }
 
-		&__btn {
+		&__link {
 			padding: 27px 0;
 			width: 354px;
 			font-size: 14px;

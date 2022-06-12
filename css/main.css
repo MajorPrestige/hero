@@ -79,12 +79,6 @@ img {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    width: 320px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -148,13 +142,13 @@ img {
   color: #ff6b09;
 }
 
-.hero__btn-wrapper {
+.hero__link-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
-.hero__btn {
+.hero__link {
   display: inline-flex;
   justify-content: center;
   padding: 14px 0;
@@ -191,9 +185,8 @@ img {
   .hero__text {
     margin-top: 15px;
   }
-  .hero__btn-wrapper {
+  .hero__link-wrapper {
     margin-top: 45px;
-    display: flex;
     justify-content: start;
   }
   .hero__img {
@@ -228,12 +221,12 @@ img {
     color: #111518;
     margin-left: 7px;
   }
-  .hero__btn-wrapper {
+  .hero__link-wrapper {
     margin-top: 45px;
-    display: flex;
+    margin-right: auto;
     justify-content: start;
   }
-  .hero__btn {
+  .hero__link {
     padding: 27px 0;
     width: 354px;
     font-size: 14px;
